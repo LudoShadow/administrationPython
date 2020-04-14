@@ -2,7 +2,7 @@
 
 import os
 import getpass
-from Donnees import *
+from donnees import *
 from Fonctions import *
 
 
