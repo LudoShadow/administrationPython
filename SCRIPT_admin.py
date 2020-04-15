@@ -19,13 +19,10 @@ while choix not in ("A",  "a", "u", "U"):
         #serveur = fichier.read()
         #serveur = serveur.split(' ')
         serveur = Liste_serveurs
-        # print(type(serveur))
     elif (choix == "U") or (choix == "u"):
-        
         serveur = input("Quel serveur voulez-vous tester ? ")
         print("Le serveur tester sera: ", serveur)
         serveur =  serveur.split()
-        # print(type(serveur))
     else:
         choix = input( "Merci de choisir A pour charger la liste des serveurs ou U pour lancer le test sur un seul serveur! ")
       
@@ -39,7 +36,6 @@ while fichier not in ( "o", "O", "n", "N"):
             repertoire()
             i = i.lower()
             fichier_resultat(i)
-           # print("Création nouveau fichier")
     elif (fichier == "N") or (fichier == "n"):
         repertoire()
         print ("Pas de nouveau fichier créé")
