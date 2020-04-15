@@ -4,7 +4,7 @@ On utilise les données du programme contenues dans Donnees.py"""
 
 import os
 import paramiko
-from Donnees import *
+from donnees import *
 import logging
 from datetime import datetime
 import time
