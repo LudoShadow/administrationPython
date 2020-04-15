@@ -29,6 +29,7 @@ La derniére question demande les identifiants d'un compte utilisateur se retrou
 
 
 
+
 ## Paramétrage du programme
 
 Une liste des machines peut être définie dans le fichiers données.py avec la variable Liste_serveurs.
@@ -46,3 +47,16 @@ Pour ajouter un test il faut un couple avec nom le nom du test et la commande qu
 		==  Test Lecture  ==
 		
 		suivi du résultat de la commande effectuée sur la machine	 
+
+
+## Messages d'erreurs possible pour la connexion ssh
+
+[WinError 10060] Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu:
+	Vérifier si:
+		- Le port ssh est peut-être bloqué
+		- La machine est hors-ligne
+
+
+[Errno 11001] getaddrinfo failed:
+	Probéme de résolution de nom
+
