@@ -33,11 +33,9 @@ def connexion_ssh(srv, login, passwd):
     # Tentative de connexion en ssh avec srv comme non du serveur, login comme compte de connexion et passwd le mot de passe de connexion
     try: 
         client.connect(srv, username = login, password = passwd )
-        # fic_ssh = open("resultat/tmp.txt", "a")
         fic_result = open("resultat/tmp.txt", "a")
         fic_result.write("OK")
         fic_result.close()
-        # fic_result = open("resultat/" + srv + ".txt", "a")
         fic_result = open("resultat/" + srv + ".txt", "a")
         fic_result.write (" Le test de connexion ssh a réussi ")
         fic_result.write(("\n" +  " " + "\n"))
@@ -67,9 +65,7 @@ def test_realise(srv, login, passwd, test_test):
     client.connect(srv, username = login, password = passwd ) 
     stdin, stdout, stderr = client.exec_command(test_test)
     for line in stdout.read().splitlines():
-        # fic_result = open("resultat/" + srv + ".txt", "a")
         fic_result.write((str(line) + "\n")[2:])
-        #print (line)
     fic_result.write(("\n" +  " " + "\n"))
     fic_result.close
   
@@ -93,7 +89,6 @@ def mise_en_page(i, name_test, srv):
 def debut_test(srv):
     date_test = time.strftime('%Y-%m-%d %H:%M:%S')
     a = 3
-    # print("srv dans boucle=", srv)
     fic_result = open("resultat/" + srv + ".txt", "a")
     while a > 0:
         a -= 1
