@@ -1,6 +1,6 @@
 SCRIPT_admin version 1.0
 
-Ce script sert à faire un état d'une machine linux distante.
+Ce script sert à faire un état d'une machine linux Centos distante.
 
 
 ## Installation
